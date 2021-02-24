@@ -63,7 +63,6 @@ body {
 .video {
   height: 100%;
   max-width: 100% ;
-  pointer-events: none;
 }
 
 .hotspotContainer{
@@ -79,4 +78,9 @@ body {
   height: auto;
   width: 25%;
   display: none;
+}
+
+.hotspot video{
+  height: 100%;
+  max-width: 100%;
 }
