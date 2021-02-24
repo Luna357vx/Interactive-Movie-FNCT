@@ -12,20 +12,26 @@
     <div class="header">
       <h1>Conspiracy Theories and Fake News</h1>
     </div>
-    <div class="videoContainer">
-      <video src="videos/CT/1. Introduction_Fatima.mp4" controls></video>
+    <div class="videoContainer" id="videoContainer">
+      <video class="video"
+        src="videos/CT/1. Introduction_Fatima.mp4"
+        onended="showHotspots()"
+        controls
+      ></video>
       <div class="hotspotContainer">
         <div class="hotspot">
-          <video>
+          <video
             src="videos/CT/3. Definition Conspiracy Theories:Caro.mp4"
-          </video>
+          ></video>
         </div>
         <div class="hotspot">
           <video src="videos/FN/3. Definition Fake News_Fatima.mp4"></video>
         </div>
         <div class="hotspot hidden"></div>
       </div>
-      <button class="fullscreen">fullscreen</button>
+      <button onclick="toggleFullscreen()" class="fullscreen">
+        <span class="icon-resize-full-2" id="fullscreen"></span>
+      </button>
     </div>
   </body>
 </html>
