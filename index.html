@@ -7,30 +7,37 @@
     <link rel="stylesheet" type="text/css" href="./style/main.css" />
     <title>Conspiracy Theories and Fake News</title>
   </head>
-
   <body>
     <div class="header">
       <h1>Conspiracy Theories and Fake News</h1>
     </div>
     <div class="videoContainer" id="videoContainer">
-      <video class="video"
+      <video
+        class="video"
+        id="video"
         src="videos/1.IntroductionFatima.mp4"
-        onended="showHotspots()"
+        ontimeupdate="toggleHotspots(this.src)"
         controls
       ></video>
       <div class="hotspotContainer">
-        <div class="hotspot">
-          <video
-            src="videos/CT/3.DefinitionConspiracyTheoriesCaro.mp4"
-          ></video>
+        <div onclick="changeVideo(this)" class="hotspot">
+          <video></video>
         </div>
-        <div class="hotspot">
-          <video src="videos/FN/3.DefinitionFakeNewsFatima.mp4"></video>
+        <div onclick="changeVideo(this)" class="hotspot">
+          <video></video>
         </div>
-        <div class="hotspot hidden"></div>
+        <div onclick="changeVideo(this)" class="hotspot">
+          <video></video>
+        </div>
+        <div onclick="changeVideo(this)" class="hotspot" id="restart">
+          Neu starten!
+        </div>
       </div>
       <button onclick="toggleFullscreen()" class="fullscreen">
         <span class="icon-resize-full-2" id="fullscreen"></span>
+      </button>
+      <button onclick="swingItBack()" class="fullscreen">
+        <span class="icon-back" id="fullscreen"></span>
       </button>
     </div>
   </body>

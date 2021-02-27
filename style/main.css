@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-  padding: 5px; 
+  padding: 5px;
   text-align: center;
   background: #5e6664;
   color: white;
@@ -33,13 +33,13 @@ body {
   border-radius: 50%;
   padding: 4px;
 }
- 
+
 .fullscreen:hover {
   opacity: 1;
   transition: all ease-in 0.2s;
   background: rgba(38, 38, 38, 0.7);
 }
- 
+
 .fullscreen:focus {
   outline: none;
   border: none;
@@ -55,17 +55,16 @@ body {
   display: none;
 }
 
-.video::-webkit-media-controls-fullscreen-button
-{
-        display: none !important;
+.video::-webkit-media-controls-fullscreen-button {
+  display: none !important;
 }
 
 .video {
   height: 100%;
-  max-width: 100% ;
+  max-width: 100%;
 }
 
-.hotspotContainer{
+.hotspotContainer {
   width: 100%;
   height: 40%;
   position: absolute;
@@ -78,9 +77,24 @@ body {
   height: auto;
   width: 25%;
   display: none;
+  cursor: pointer;
 }
 
-.hotspot video{
+.hotspot video {
   height: 100%;
   max-width: 100%;
+}
+
+#restart {
+  background: rgba(43, 43, 43, 0.3);
+  color: white;
+  text-align: center;
+  line-height: 100%;
+  vertical-align: middle;
+  border-radius: 10px;
+  z-index: 100;
+  box-shadow: 0px 0px 15px 0px rgba(117, 117, 117, 0.7);
+  height: fit-content;
+  padding: 5px;
+  display: none;
 }
