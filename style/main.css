@@ -7,15 +7,14 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   background: url(../images/matrix.jpg) repeat left top;
-  background-size: cover;
 }
 
 .header {
   padding: 5px; 
   text-align: center;
-  background: #eede07;
+  background: #1e8bbe;
   color: white;
-  width: 41%;
+  width: 100%;
   border-radius: 20px;
   margin-bottom: 10px;
 }
@@ -97,4 +96,13 @@ body {
 #matrix {
   height: 100%;
   width: 100%;
+}
+
+.footer {
+  padding: 5px; 
+  text-align: center;
+  background: #1e8bbe;
+  color: white;
+  width: 100%;
+  border-radius: 20px;
 }
