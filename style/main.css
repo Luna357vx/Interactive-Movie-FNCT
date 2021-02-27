@@ -88,16 +88,6 @@ body {
   max-width: 100%;
 }
 
-#world {
-  height: 100%;
-  width: 100%;
-}
-
-#matrix {
-  height: 100%;
-  width: 100%;
-}
-
 .footer {
   padding: 5px; 
   text-align: center;
