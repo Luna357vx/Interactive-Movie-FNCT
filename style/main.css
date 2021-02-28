@@ -1,19 +1,22 @@
 @import url("icons.css");
 
 body {
-  background: linear-gradient(135deg, #ce9a03, #000000);
+  background: #155573;
   font-family: Arial;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background: url(../images/matrix.jpg) repeat left top;
 }
 
 .header {
   padding: 5px;
   text-align: center;
-  background: #5e6664;
+  background: #1e8bbe;
   color: white;
-  width: 41%;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 
 .fullscreen {
@@ -97,4 +100,12 @@ body {
   height: fit-content;
   padding: 5px;
   display: none;
+}
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: #1e8bbe;
+  color: white;
+  width: 100%;
+  border-radius: 20px;
 }
