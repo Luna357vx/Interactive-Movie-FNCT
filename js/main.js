@@ -70,7 +70,7 @@ const toggleHotspots = (mainSource) => {
   if (video.duration - video.currentTime > 0) {
     hideHotspots();
   } else {
-    mainSource = new URL(mainSource).pathname.substring(1);
+    mainSource = "videos" + mainSource.split("/videos")[1];
     let index = 0;
     switch (mainSource) {
       case paths.introduction:
