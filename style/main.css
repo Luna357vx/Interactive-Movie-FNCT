@@ -17,6 +17,9 @@ body {
   width: 100%;
   border-radius: 20px;
   margin-bottom: 10px;
+  font-family: sofia-pro, sans-serif;
+  font-style: bold;
+  font-size: xx-large;
 }
 
 .fullscreen {
@@ -108,4 +111,7 @@ body {
   color: white;
   width: 100%;
   border-radius: 20px;
+  font-family: sofia-pro, sans-serif;
+  font-style: bold;
+  font-size: x-large;
 }
