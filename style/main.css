@@ -122,5 +122,7 @@ marquee {
   font-size: xx-large;
   font-weight: bold;
   background-color: red;
+  color: White;
   padding: 20px;
+  font-family: sofia-pro, sans-serif;
 }
