@@ -19,12 +19,10 @@ body {
   margin-bottom: 10px;
 }
 
-.fullscreen {
+.iconBtn {
   height: 42px;
   width: 42px;
   position: absolute;
-  top: 1%;
-  right: 1%;
   z-index: 100;
   appearance: none;
   background: rgba(38, 38, 38, 0.5);
@@ -37,13 +35,23 @@ body {
   padding: 4px;
 }
 
-.fullscreen:hover {
+.back {
+  top: 1%;
+  left: 1%;
+}
+
+.fullscreen {
+  top: 1%;
+  right: 1%;
+}
+
+.iconBtn:hover {
   opacity: 1;
   transition: all ease-in 0.2s;
   background: rgba(38, 38, 38, 0.7);
 }
 
-.fullscreen:focus {
+.iconBtn:focus {
   outline: none;
   border: none;
 }
