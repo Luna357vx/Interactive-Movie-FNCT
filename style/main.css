@@ -12,7 +12,7 @@ body {
 .header {
   padding: 5px;
   text-align: center;
-  background: #1e8bbe;
+  background: #009900;
   color: white;
   width: 100%;
   border-radius: 20px;
@@ -107,7 +107,7 @@ body {
 .footer {
   padding: 5px;
   text-align: center;
-  background: #1e8bbe;
+  background: #009900;
   color: white;
   width: 100%;
   border-radius: 20px;
