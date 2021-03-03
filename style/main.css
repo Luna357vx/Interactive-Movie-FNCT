@@ -52,10 +52,9 @@ body {
 }
 
 .videoContainer {
-  height: 77vh;
+  height: 70vh;
   width: fit-content;
-  position: absolute;
-  top: 16em;
+  position: relative;
 }
 
 .hidden {
