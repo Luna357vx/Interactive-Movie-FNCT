@@ -122,4 +122,5 @@ marquee {
   font-size: xx-large;
   font-weight: bold;
   background-color: red;
+  padding: 20px;
 }
