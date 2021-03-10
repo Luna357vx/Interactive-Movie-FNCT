@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./style/main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ldl4upq.css" />
     <title>Conspiracy Theories and Fake News</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
   </head>
 
   <body>
@@ -17,18 +18,25 @@
     <div class="videoContainer" id="videoContainer">
       <video
         class="video"
+        id="video"
         src="videos/1.IntroductionFatima.mp4"
-        onended="showHotspots()"
+        ontimeupdate="hideHotspots()"
+        onended="showHotspots(this.src)"
         controls
       ></video>
       <div class="hotspotContainer">
-        <div class="hotspot">
-          <video src="videos/CT/3.DefinitionConspiracyTheoriesCaro.mp4"></video>
+        <div onclick="changeVideo(this)" class="hotspot">
+          <video></video>
         </div>
-        <div class="hotspot">
-          <video src="videos/FN/3.DefinitionFakeNewsFatima.mp4"></video>
+        <div onclick="changeVideo(this)" class="hotspot">
+          <video></video>
         </div>
-        <div class="hotspot hidden"></div>
+        <div onclick="changeVideo(this)" class="hotspot">
+          <video></video>
+        </div>
+        <div onclick="location.reload()" class="hotspot" id="restart">
+          Restart
+        </div>
       </div>
       <button onclick="toggleFullscreen()" class="iconBtn fullscreen">
         <span class="icon-resize-full-2" id="fullscreen"></span>
@@ -39,8 +47,10 @@
     </div>
 
     <div>
-      <img src="images/computer.png" />
+      <img src="images/screen.png" />
     </div>
+
+    <marquee direction="left">+++FAKE NEWS+++</marquee>
 
     <div class="footer">
       <h1>About</h1>

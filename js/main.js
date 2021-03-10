@@ -1,5 +1,6 @@
 let paths = {
   introduction: "videos/1.IntroductionFatima.mp4",
+  ending: "videos/5.2EndingScreen.mp4",
   definition: {
     0: "videos/CT/3.DefinitionConspiracyTheoriesCaro.mp4",
     1: "videos/FN/3.DefinitionFakeNewsFatima.mp4",
@@ -17,8 +18,13 @@ let paths = {
   },
 };
 
+let previousVideos = [];
+let counter = 0;
+
 const video = document.getElementById("video");
-const allHotspots = document.querySelectorAll(".hotspot");
+const allHotspots = document.querySelectorAll(".hotspotContainer .hotspot");
+
+video.volume = 0.3;
 
 function toggleFullscreen() {
   let video_player = document.getElementById("videoContainer");
@@ -55,49 +61,75 @@ function fs_status() {
   else return false;
 }
 
-function changeVideo(hotspot) {
+async function changeVideo(hotspot) {
+  removeHotspots();
+  previousVideos.push("videos" + video.src.split("/videos")[1]);
+  ++counter;
   video.src = hotspot.firstElementChild.src;
   video.play();
 }
 
-const toggleHotspots = (mainSource) => {
+const hideHotspots = (mainSource) => {
   if (video.duration - video.currentTime > 0) {
-    allHotspots.forEach((hotspot) => {
-      hotspot.style.display = "none";
-    });
-  } else {
-    mainSource = new URL(mainSource).pathname.substring(1);
-    let index = 0;
-    switch (mainSource) {
-      case paths.introduction:
-        allHotspots.forEach((hotspot) => {
-          if (paths.definition[index]) {
-            hotspot.firstElementChild.src = paths.definition[index];
-            hotspot.style.display = "inline";
-            ++index;
-          }
-        });
-        break;
-      case paths.definition[0]:
-        allHotspots.forEach((hotspot) => {
-          if (paths.conspiracy[index]) {
-            hotspot.firstElementChild.src = paths.conspiracy[index];
-            hotspot.style.display = "inline";
-            ++index;
-          }
-        });
-        break;
-      case paths.definition[1]:
-        allHotspots.forEach((hotspot) => {
-          if (paths.fakeNews[index]) {
-            hotspot.firstElementChild.src = paths.fakeNews[index];
-            hotspot.style.display = "inline";
-            ++index;
-          }
-        });
-        break;
-      default:
-        document.getElementById("restart").style.display = "inline";
-    }
+    removeHotspots();
   }
 };
+
+function swingItBack() {
+  video.src = previousVideos[counter - 1];
+  video.play();
+  counter--;
+}
+
+const showHotspots = (mainSource) => {
+  mainSource = "videos" + mainSource.split("/videos")[1];
+  let index = 0;
+  switch (mainSource) {
+    case paths.introduction:
+      allHotspots.forEach((hotspot) => {
+        if (paths.definition[index]) {
+          hotspot.firstElementChild.src = paths.definition[index];
+          hotspot.style.display = "inline";
+          ++index;
+        }
+      });
+      break;
+    case paths.definition[0]:
+      allHotspots.forEach((hotspot) => {
+        if (paths.conspiracy[index]) {
+          hotspot.firstElementChild.src = paths.conspiracy[index];
+          hotspot.style.display = "inline";
+          ++index;
+        }
+      });
+      break;
+    case paths.definition[1]:
+      allHotspots.forEach((hotspot) => {
+        if (paths.fakeNews[index]) {
+          hotspot.firstElementChild.src = paths.fakeNews[index];
+          hotspot.style.display = "inline";
+          ++index;
+        }
+      });
+      break;
+    case paths.conspiracy[0]:
+    case paths.conspiracy[1]:
+    case paths.conspiracy[2]:
+    case paths.fakeNews[0]:
+    case paths.fakeNews[1]:
+    case paths.fakeNews[2]:
+      removeHotspots();
+      video.src = paths.ending;
+      video.play();
+      break;
+
+    default:
+      document.getElementById("restart").style.display = "inline";
+  }
+};
+
+function removeHotspots() {
+  allHotspots.forEach((hotspot) => {
+    hotspot.removeAttribute("style");
+  });
+}
