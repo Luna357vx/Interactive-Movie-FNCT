@@ -17,11 +17,8 @@ let paths = {
   },
 };
 
-let previousVideos = [];
-let counter = 0;
-
 const video = document.getElementById("video");
-const allHotspots = document.querySelectorAll(".hotspotContainer .hotspot");
+const allHotspots = document.querySelectorAll(".hotspot");
 
 function toggleFullscreen() {
   let video_player = document.getElementById("videoContainer");
@@ -58,19 +55,18 @@ function fs_status() {
   else return false;
 }
 
-async function changeVideo(hotspot) {
-  hideHotspots();
-  previousVideos.push("videos" + video.src.split("/videos")[1]);
-  ++counter;
+function changeVideo(hotspot) {
   video.src = hotspot.firstElementChild.src;
   video.play();
 }
 
 const toggleHotspots = (mainSource) => {
   if (video.duration - video.currentTime > 0) {
-    hideHotspots();
+    allHotspots.forEach((hotspot) => {
+      hotspot.style.display = "none";
+    });
   } else {
-    mainSource = "videos" + mainSource.split("/videos")[1];
+    mainSource = new URL(mainSource).pathname.substring(1);
     let index = 0;
     switch (mainSource) {
       case paths.introduction:
@@ -105,15 +101,3 @@ const toggleHotspots = (mainSource) => {
     }
   }
 };
-
-function swingItBack() {
-  setTimeout(console.log("Wait"), 2000);
-  video.src = previousVideos[counter - 1];
-  counter--;
-}
-
-function hideHotspots() {
-  allHotspots.forEach((hotspot) => {
-    hotspot.removeAttribute("style");
-  });
-}

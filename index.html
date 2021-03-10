@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./style/main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ldl4upq.css" />
     <title>Conspiracy Theories and Fake News</title>
   </head>
+
   <body>
     <div class="header">
       <h1>Conspiracy Theories and Fake News</h1>
@@ -15,24 +17,18 @@
     <div class="videoContainer" id="videoContainer">
       <video
         class="video"
-        id="video"
         src="videos/1.IntroductionFatima.mp4"
-        ontimeupdate="toggleHotspots(this.src)"
+        onended="showHotspots()"
         controls
       ></video>
       <div class="hotspotContainer">
-        <div onclick="changeVideo(this)" class="hotspot">
-          <video></video>
+        <div class="hotspot">
+          <video src="videos/CT/3.DefinitionConspiracyTheoriesCaro.mp4"></video>
         </div>
-        <div onclick="changeVideo(this)" class="hotspot">
-          <video></video>
+        <div class="hotspot">
+          <video src="videos/FN/3.DefinitionFakeNewsFatima.mp4"></video>
         </div>
-        <div onclick="changeVideo(this)" class="hotspot">
-          <video></video>
-        </div>
-        <div onclick="changeVideo(this)" class="hotspot" id="restart">
-          Neu starten!
-        </div>
+        <div class="hotspot hidden"></div>
       </div>
       <button onclick="toggleFullscreen()" class="iconBtn fullscreen">
         <span class="icon-resize-full-2" id="fullscreen"></span>
