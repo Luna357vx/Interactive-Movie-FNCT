@@ -18,11 +18,17 @@ let paths = {
   },
 };
 
+let person = {
+  MaxMueller:
+    "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+};
+
 let previousVideos = [];
 let counter = 0;
 
 const video = document.getElementById("video");
 const allHotspots = document.querySelectorAll(".hotspotContainer .hotspot");
+const modal = document.getElementById("modal");
 
 video.volume = 0.3;
 
@@ -133,3 +139,20 @@ function removeHotspots() {
     hotspot.removeAttribute("style");
   });
 }
+
+const openModal = (elem, name) => {
+  var img = "./images" + elem.src.split("/images")[1];
+  document.getElementById("bigAvatar").firstElementChild.src = img;
+  document.getElementById("description").innerHTML = person[name];
+  modal.style.display = "block";
+  document.getElementById("fp-nav").style.pointerEvents = "none";
+  document.getElementById("close").focus();
+};
+
+const closeModal = (e) => {
+  console.log(e);
+  if (!e || e.target === modal) {
+    modal.style.display = "none";
+    document.getElementById("fp-nav").style.pointerEvents = "all";
+  }
+};
