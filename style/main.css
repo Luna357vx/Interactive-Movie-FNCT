@@ -221,7 +221,7 @@ body {
   font-size: xx-large;
   position:fixed;
   left: 0px;
-  top: 0px;
+  bottom: 0px;
   height: 50px; 
   width: 100%;
 }
