@@ -13,13 +13,35 @@ body {
   flex-wrap: wrap;
 }
 
+.top {
+  padding: 100px;
+  text-align: center;
+  color: black;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-family: din-condensed, sans-serif;
+  font-style: bold;
+  font-size: xx-large;
+}
+
+.secondLine {
+  padding: 50px;
+  text-align: center;
+  color: rgb(66, 66, 66);
+  width: 100%;
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-size: 130%;
+  font-weight: 100;
+}
+
 .header {
   padding: 5px;
   text-align: center;
-  background: #009900;
   color: white;
+  background-color: #99cc33;
   width: 100%;
-  border-radius: 20px;
   margin-bottom: 10px;
   font-family: sofia-pro, sans-serif;
   font-style: bold;
@@ -115,7 +137,7 @@ body {
 }
 
 #restart {
-  background: #009900;
+  background: #99cc33;
   color: white;
   text-align: center;
   border-radius: 10px;
@@ -214,7 +236,7 @@ body {
 }
 
 .newsticker {
-  background-color: red;
+  background-color: #ff6633;
   color: white;
   font: sofia-pro, sans-serif;
   font-weight: bold;
