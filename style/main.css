@@ -40,7 +40,7 @@ body {
   padding: 5px;
   text-align: center;
   color: white;
-  background-color: #99cc33;
+  background-color: #669933;
   width: 100%;
   margin-bottom: 10px;
   font-family: sofia-pro, sans-serif;
@@ -137,7 +137,7 @@ body {
 }
 
 #restart {
-  background: #99cc33;
+  background: #669933;
   color: white;
   text-align: center;
   border-radius: 10px;
@@ -151,6 +151,7 @@ body {
 .section {
   width: 100vw;
   position: relative;
+  background-color: #669933;
 }
 
 .section.first {
