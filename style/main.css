@@ -132,7 +132,7 @@ body {
 }
 
 .section.first {
-  background: url("../images/background.png") no-repeat;
+  background: url("../images/CTFNbackground.png") no-repeat;
   background-size: cover;
 }
 
@@ -219,9 +219,9 @@ body {
   font: sofia-pro, sans-serif;
   font-weight: bold;
   font-size: xx-large;
-  position:fixed;
+  position: fixed;
   left: 0px;
   bottom: 0px;
-  height: 50px; 
+  height: 50px;
   width: 100%;
 }
