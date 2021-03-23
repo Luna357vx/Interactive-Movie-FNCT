@@ -14,7 +14,7 @@ body {
 }
 
 .top {
-  padding: 100px;
+  margin-top: 2vw;
   text-align: center;
   color: black;
   width: 100%;
@@ -159,6 +159,16 @@ body {
   background-size: cover;
 }
 
+.section.second {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(216, 227, 177, 1) 12%,
+    rgba(166, 191, 75, 1) 67%,
+    rgba(131, 163, 74, 1) 83%
+  );
+}
+
 .galleryWrapper {
   position: absolute;
   top: 50%;
@@ -216,7 +226,7 @@ body {
 }
 
 .modal .bigAvatar {
-  height: 80%;
+  height: 70%;
   max-width: 30%;
 }
 
@@ -237,14 +247,10 @@ body {
 }
 
 .newsticker {
-  background-color: #ff6633;
+  padding: 2px 0px;
+  background-color: #cb6c2a;
   color: white;
   font: sofia-pro, sans-serif;
-  font-weight: bold;
   font-size: xx-large;
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  height: 50px;
   width: 100%;
 }
