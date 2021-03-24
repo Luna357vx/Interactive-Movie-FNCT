@@ -19,9 +19,11 @@ let paths = {
 };
 
 let person = {
-  BastianAlbrecht: "Basti:",
-  ChiaraSkiba: "Chiara:",
-  CarolinWiegand: "Caro:",
+  BastianAlbrecht:
+    "Basti: passionate drummer & radio activist - This is Basti, 23 years old and from the beautiful Thuringia. He’s a student at Mittweida University of Applied Sciences and since February he has also been the programme director at 99drei Radio Mittweida. Besides his studies, he plays drums in two bands. He is also very interested in sports. This includes handball and football, for example.",
+  ChiaraSkiba:
+    "Chiara: loves to write - She has her own blog, where she reports on festivals, concerts (music) and much more. She is also very interested in sports.",
+  CarolinStellaWiegand: "Caro:",
   EricSchiller: "Eric:",
   VictoriaObermanns: "Vicky:",
   FatimaMaged: "Fatima:",

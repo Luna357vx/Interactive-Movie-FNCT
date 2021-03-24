@@ -43,7 +43,7 @@ h1 {
   padding: 5px;
   text-align: center;
   color: white;
-  background-color: #669933;
+  background-color: #88a44c;
   width: 100%;
   margin-bottom: 10px;
   font-family: sofia-pro, sans-serif;
@@ -55,7 +55,7 @@ h1 {
   padding: 5px;
   text-align: center;
   color: white;
-  background-color: #a6bf4b;
+  background-color: #88a44c;
   width: 100%;
   margin-bottom: 10px;
   font-family: sofia-pro, sans-serif;
@@ -183,21 +183,6 @@ h1 {
 
 .section.third {
   background: url("../images/blob-scene-haikei.svg") no-repeat;
-}
-
-.blob1 {
-  height: 40%;
-  width: 40%;
-  position: absolute;
-  top: 40%;
-  left: -10%;
-}
-.blob2 {
-  height: 40%;
-  width: 40%;
-  position: absolute;
-  top: 40%;
-  right: -10%;
 }
 
 .galleryWrapper {
