@@ -36,6 +36,7 @@ let person = {
 let previousVideos = [];
 let counter = 0;
 
+const videoContainer = document.getElementById("videoContainer");
 const video = document.getElementById("video");
 const allHotspots = document.querySelectorAll(".hotspotContainer .hotspot");
 const modal = document.getElementById("modal");
