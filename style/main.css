@@ -48,6 +48,18 @@ body {
   font-size: xx-large;
 }
 
+.aboutUs {
+  padding: 5px;
+  text-align: center;
+  color: white;
+  background-color: #a6bf4b;
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: sofia-pro, sans-serif;
+  font-style: bold;
+  font-size: xx-large;
+}
+
 .iconBtn {
   height: 42px;
   width: 42px;
@@ -162,23 +174,20 @@ body {
 }
 
 .section.second {
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(216, 227, 177, 1) 12%,
-    rgba(166, 191, 75, 1) 67%,
-    rgba(131, 163, 74, 1) 83%
-  );
+  background: url("../images/CTFNbackground.png") no-repeat;
 }
 
 .galleryWrapper {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 50%;
   transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: repeat(6, minmax(45px, 55px));
   grid-gap: 25px;
+  width: fit-content;
+  position: absolute;
 }
 
 .avatar {
