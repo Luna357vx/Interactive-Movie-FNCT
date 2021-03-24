@@ -3,7 +3,7 @@ let paths = {
   ending: "videos/5.2EndingScreen.mp4",
   definition: {
     0: {
-      thumbnail: "images/thumbnail.png",
+      thumbnail: "images/tnDefinitionCT.png",
       video: "videos/CT/3.DefinitionConspiracyTheoriesCaro.mp4",
     },
     1: {
