@@ -40,7 +40,7 @@ body {
   padding: 5px;
   text-align: center;
   color: white;
-  background-color: #669933;
+  background-color: #88a44c;
   width: 100%;
   margin-bottom: 10px;
   font-family: sofia-pro, sans-serif;
@@ -52,7 +52,7 @@ body {
   padding: 5px;
   text-align: center;
   color: white;
-  background-color: #a6bf4b;
+  background-color: #88a44c;
   width: 100%;
   margin-bottom: 10px;
   font-family: sofia-pro, sans-serif;
@@ -174,7 +174,7 @@ body {
 }
 
 .section.second {
-  background: url("../images/CTFNbackground.png") no-repeat;
+  background: url("../images/CTFNMirrored.png") no-repeat;
 }
 
 .galleryWrapper {
