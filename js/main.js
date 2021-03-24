@@ -34,28 +34,58 @@ let paths = {
 };
 
 let person = {
-  BastianAlbrecht:
-    "Basti: passionate drummer & radio activist - This is Basti, 23 years old and from the beautiful Thuringia. He’s a student at Mittweida University of Applied Sciences and since February he has also been the programme director at 99drei Radio Mittweida. Besides his studies, he plays drums in two bands. He is also very interested in sports. This includes handball and football, for example.",
-  ChiaraSkiba:
-    "Chiara: loves to write - She has her own blog, where she reports on festivals, concerts (music) and much more. She is also very interested in sports.",
-  CarolinStellaWiegand: "Caro:",
-  EricSchiller: "Eric:",
-  VictoriaObermanns: "Vicky:",
-  FatimaMaged: "Fatima:",
+  BastianAlbrecht: {
+    name: "Bastian Albrecht",
+    text:
+      "passionate drummer & radio activist - This is Basti, 23 years old and from the beautiful Thuringia. He is a student at Mittweida University of Applied Sciences and since February he has also been the programme director at 99drei Radio Mittweida. Besides his studies, he plays drums in two bands. He is also very interested in sports. This includes handball and football, for example.",
+  },
+
+  ChiaraSkiba: {
+    name: "Chiara Skiba",
+    text:
+      "loves to write - She has her own blog, where she reports on festivals, concerts, music and much more. She is also very interested in sports.",
+  },
+
+  CarolinStellaWiegand: {
+    name: "Carolin Stella Wiegand",
+    text:
+      "26 years old and Media Management student at the University of Applied Sciences Mittweida - Previously, she completed an apprenticeship in Management Assistant for Wholesale and Foreign Trade. After her apprenticeship, she worked as a digital editor at first moment Fotografie GmbH & Co. KG for one year. However, she then decided to pursue a personal development and decided to study at the HSMW. Her creative hobbies and ambition characterize her as well as her open-mindedness.",
+  },
+
+  EricSchiller: {
+    name: "Eric Schiller",
+    text:
+      "20 years old optimist, from Zittau, near the Dreiländereck - In three words, he would describe himself as ambitious, funny and honest. His professional goal is to become a newscaster on television.",
+  },
+
+  VictoriaObermanns: {
+    name: "Victoria Obermanns",
+    text:
+      "creative and communicative powerwoman - She studies Media Management in the journalism major at Mittweida University of Applied Sciences. There she is involved in the student council in the area of public relations and works as a reporter for 99,3 Radio Mittweida. Outside of her studies, she is passionate about sports, art and theater. In the past she worked at several cultural festivals.",
+  },
+
+  FatimaMaged: {
+    name: "Fatima Maged",
+    text:
+      "25 year old cat lady from Lebanon - She is studying Media Management in Mittweida. She had her first journalism-experience at the age of 15 in a local radio named SAEK. Currently she is working as a volunteer in another local radio named Radio T. Besides that she wrote articles for the social media magazine light_up. Now she is writing for the social media magazine Good News Magazin. In her free time she likes to go to concerts and festivals. She also likes to play wheelchair basketball and goes hiking. Her plan for the future is to work as a freelance journalist. She wants to focus on the topics: animal rights and human rights.",
+  },
+
   VanessaJacob: {
     name: "Vanessa Jacob",
     text:
-      "bookworm with & kind heart - Before her studies, she graduated with a specialization in design. Her interests are books, movies and music. As part of her studies she is a member of the lecturer’s office of medienMITTWEIDA and has already published a few posts. In the future she wants to work in a library or a publishing house.",
+      "bookworm with & kind hearted - Before her studies, she graduated with a specialization in design. Her interests are books, movies and music. As part of her studies she is a member of the lecturer’s office of medienMITTWEIDA and has already published a few posts. In the future she wants to work in a library or a publishing house.",
   },
+
   AnnaKoutsidis: {
     name: "Anna Koutsidis",
     text:
       "Erzgebirgerin & real sunshine - She is the editor-in-chief of medienMITTWEIDA. Right now she is studying Media Management at the HSMW in her fourth semester. Her dream is to become a journalist. In addition to her studies, she works for the Freie Presse, where she also wants to complete her internship in the future.",
   },
+
   LuzieCarolaRietschel: {
     name: "Luzie Carola Rietschel",
     text:
-      "creative person & art lover - She studies Media Management \n Digital News Journalism and works as a graphic designer for an online news publisher named Good News Magazin. In her past she worked as: a video editor for the HSMW, a cameraman and visual editor for Chop and Change, designer for light up! news and product designer. In the future she wants to create an art collective for artist who need support with their work.",
+      "creative person & art lover - She studies Media Management at the HSMW and works as a graphic designer for an online magazine named Good News Magazin. In her past she worked as: a video editor, a cameraman and visual editor for Chop and Change, designer for light up! news and product designer. In the future she wants to create an art collective for artist who need support with their work and stay true to her creative self.",
   },
 };
 

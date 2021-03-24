@@ -221,7 +221,7 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fbfff0;
+  background: #fff;
   backdrop-filter: blur(5px);
   border-radius: 10px;
   display: flex;
