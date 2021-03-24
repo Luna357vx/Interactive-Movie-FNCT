@@ -88,17 +88,12 @@ body {
 .videoContainer {
   height: 60%;
   width: fit-content;
-  position:absolute;
+  position: absolute;
   top: 28%;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 9px 5px 20px -3px #1E1E1E;
+  box-shadow: 9px 5px 20px -3px #1e1e1e;
   background: #000000;
-}
-}
-body#tinymce {
-background: #FFFFFF
-}
 }
 
 .hidden {
