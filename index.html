@@ -21,11 +21,11 @@
         >
         <div class="top">
           <h1>What is fake, what is real?</h1>
-          <h1 class="secondLine">
+          <h2 class="secondLine">
             Find it out in the <br />
             interactive movie <br />
             below.
-          </h1>
+          </h2>
           <img src="./images/down-arrow.gif" alt="down arrow" />
         </div>
       </div>
@@ -39,6 +39,8 @@
             ontimeupdate="hideHotspots()"
             onended="showHotspots(this.src)"
             controls
+            controlsList="nodownload"
+            disablePictureInPicture
           ></video>
           <div class="hotspotContainer">
             <div onclick="changeVideo(this)" class="hotspot">
@@ -150,7 +152,10 @@
             <div class="bigAvatar" id="bigAvatar">
               <img />
             </div>
-            <div class="description" id="description"></div>
+            <div class="description" id="description">
+              <h1></h1>
+              <p></p>
+            </div>
           </div>
         </div>
       </div>

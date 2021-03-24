@@ -12,11 +12,20 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 h1 {
   font-family: din-condensed, sans-serif;
   font-size: 4rem;
   font-style: bold;
   color: rgb(66, 66, 66);
+}
+
+h2 {
+  color: rgb(66, 66, 66);
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-size: 2.5rem;
+  font-weight: 100;
 }
 
 .top {
@@ -31,36 +40,7 @@ h1 {
 .secondLine {
   padding: 50px;
   text-align: center;
-  color: rgb(66, 66, 66);
   width: 100%;
-  font-family: sofia-pro, sans-serif;
-  font-style: normal;
-  font-size: 130%;
-  font-weight: 100;
-}
-
-.header {
-  padding: 5px;
-  text-align: center;
-  color: white;
-  background-color: #669933;
-  width: 100%;
-  margin-bottom: 10px;
-  font-family: sofia-pro, sans-serif;
-  font-style: bold;
-  font-size: xx-large;
-}
-
-.aboutUs {
-  padding: 5px;
-  text-align: center;
-  color: white;
-  background-color: #a6bf4b;
-  width: 100%;
-  margin-bottom: 10px;
-  font-family: sofia-pro, sans-serif;
-  font-style: bold;
-  font-size: xx-large;
 }
 
 .iconBtn {
@@ -111,10 +91,6 @@ h1 {
   background: #000000;
 }
 
-.hidden {
-  display: none;
-}
-
 .video::-webkit-media-controls-fullscreen-button {
   display: none !important;
 }
@@ -147,6 +123,7 @@ h1 {
 .hotspot video {
   height: auto;
   max-width: 100%;
+  display: block;
 }
 
 .hotspot video::-webkit-media-controls-timeline {
@@ -182,40 +159,30 @@ h1 {
 }
 
 .section.third {
-  background: url("../images/blob-scene-haikei.svg") no-repeat;
-}
-
-.blob1 {
-  height: 40%;
-  width: 40%;
-  position: absolute;
-  top: 40%;
-  left: -10%;
-}
-.blob2 {
-  height: 40%;
-  width: 40%;
-  position: absolute;
-  top: 40%;
-  right: -10%;
+  background: url("../images/blob-scene-haikei-2.svg") no-repeat;
+  padding-top: 20px;
 }
 
 .galleryWrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: grid;
   grid-template-columns: repeat(6, minmax(15px, 55px));
+  grid-template-rows: repeat(3, minmax(15px, 1fr));
   grid-gap: 25px;
   width: fit-content;
-  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .avatar {
   position: relative;
   grid-column: span 2;
-  border: 1px solid rgb(66, 66, 66);
+  outline: 2px solid rgb(66, 66, 66);
+  cursor: pointer;
+  transition: outline-offset 200ms ease, outline-width 200ms ease;
+}
+.avatar:hover {
+  outline-offset: -2px;
+  outline-width: 4px;
 }
 
 .avatar img {
@@ -254,7 +221,8 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
+  background: #fbfff0;
+  backdrop-filter: blur(5px);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -292,6 +260,7 @@ h1 {
 }
 
 .card {
+  position: relative;
   width: fit-content;
   background: rgba(255, 255, 255, 0.4);
   padding: 20px;
@@ -299,7 +268,7 @@ h1 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+  margin-bottom: 2%;
   border-radius: 10px;
   backdrop-filter: blur(5px);
   box-shadow: 9px 5px 20px -3px #1e1e1e;
