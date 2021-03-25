@@ -138,7 +138,8 @@ h2 {
   box-shadow: 0px 0px 15px 0px rgba(117, 117, 117, 0.7);
   padding: 20px;
   position: absolute;
-  bottom: 10%;
+  left: 200px;
+  bottom: 5%;
   display: none;
 }
 
