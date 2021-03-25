@@ -7,29 +7,38 @@ let paths = {
       video: "videos/CT/3.DefinitionConspiracyTheoriesCaro.mp4",
     },
     1: {
-      thumbnail: "",
+      thumbnail: "images/tnDefinitionFN.png",
       video: "videos/FN/3.DefinitionFakeNewsFatima.mp4",
     },
   },
 
   conspiracy: {
     0: {
-      thumbnail: "",
+      thumbnail: "images/tnHistoryCT.png",
       video: "videos/CT/4.1HistoryConspiracyTheoriesVicky.mp4",
     },
     1: {
-      thumbnail: "",
+      thumbnail: "images/tnExamplesCT.png",
       video: "videos/CT/4.2ExampleConspiracyTheoriesCaro.mp4",
     },
     2: {
-      thumbnail: "",
+      thumbnail: "images/tnUncoverCT.png",
       video: "videos/CT/4.3UncoverConspiracyTheoriesVicky.mp4",
     },
   },
   fakeNews: {
-    0: { thumbnail: "", video: "videos/FN/4.1HistoryFakeNewsFatima.mp4" },
-    1: { thumbnail: "", video: "videos/FN/4.2ExampleFakeNewsEric.mp4" },
-    2: { thumbnail: "", video: "videos/FN/4.3UncoverFakeNewsEric.mp4" },
+    0: {
+      thumbnail: "images/tnHistoryFN.png",
+      video: "videos/FN/4.1HistoryFakeNewsFatima.mp4",
+    },
+    1: {
+      thumbnail: "images/tnExamplesFN.png",
+      video: "videos/FN/4.2ExampleFakeNewsEric.mp4",
+    },
+    2: {
+      thumbnail: "images/tnUncoverFN.png",
+      video: "videos/FN/4.3UncoverFakeNewsEric.mp4",
+    },
   },
 };
 
